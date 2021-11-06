@@ -3,49 +3,12 @@
 <head>
     <!--Place name on browser tab-->
     <title>Michael Cartagena</title>
-    <style type="text/css">
-        body{
-            background-color: cadetblue;
-        }
-        h1{
-            color: rgb(58, 40, 161);
-            background-color: rgb(173, 21, 173);
-            font-family: sans-serif;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: underline brown;
-        }
-        h3{
-            color: rgb(87, 87, 87);
-            background-color: #002;
-            font-family: sans-serif;
-            font-weight: 800;
-            text-align: center;
-            text-decoration: underline;
-            font-style: italic;
-        }
-        p{
-            color: rgb(65, 34, 178);
-            text-transform: none;
-            letter-spacing: 0.2em;
-            word-spacing: 0.5em;
-            line-height: 1;
-            text-align: center;
-        }
-        #clickHere{
-            color: rgb(25, 0, 255);
-        }
-        a{
-            font-size: x-large;
-            text-decoration: none;
-            color: purple;
-        }
-        
-        </style>
+    <link rel="stylesheet" type="text/css"
+          href="css/style.css">
 </head>
 
 <body>
-
+<div id="div1">
     <h1>Michael Cartagena</h1>
     <h3>Welcome!</h3>
 
@@ -53,17 +16,17 @@
         <a href="index.html">My Main Page</a>
         <a href="pages/contact.html">Contact</a> 
     </nav>
-
-    <div>
+</div>
+<div id="div2">
     <!--Embed a video-->
     <iframe 
     width="50%" 
     height="545" 
     src="https://www.youtube.com/embed/XZwpIO9m978"
-     title="YouTube video player" frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-     allowfullscreen></iframe>
-    
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
 
     <p>I feel I can contribute to the learning space of fellow students with my experience. 
         I pride myself on completing tasks before their set deadlines with the highest efficiency in an organization from start to finish. 
@@ -71,19 +34,20 @@
         operating systems, device & network troubleshooting, and customer engagement. 
         I'm also really into 90's sports cars.
     </p>
+    <a href="https://github.com/cartami/SE-Homework">My github</a>
+</div> 
+        
 
-
-        <a href="https://github.com/cartami/SE-Homework">My github</a>
-
+<div id="div3">
     <ol>
         <p id="clickHere">Click images for link to external website</p>
         <li>
             <a href="https://www.w3schools.com/"><img src="images/s15.jpg" width="1000" height="600"></a>
             <table border=solid table-layout: auto>
                 <tr>
-                    <th> <h2> Manufacturer</h2></th>
-                    <th> <h2>Car Year</h2></th>
-                    <th> <h2>Car Model</h2></th>
+                    <th> <h2 class="carList"> Manufacturer</h2></th>
+                    <th> <h2 class="carList">Car Year</h2></th>
+                    <th> <h2 class="carList">Car Model</h2></th>
                 </tr>
                 <tr>
                     <th> Nissan</th>
@@ -103,9 +67,9 @@
             </iframe>
             <table border=solid table-layout: auto>
                 <tr>
-                    <th> <h2>Car Manufacturer</h2></th>
-                    <th> <h2>Car Year</h2></th>
-                    <th> <h2>Car Model</h2></th>
+                    <th> <h2 class="carList">Car Manufacturer</h2></th>
+                    <th> <h2 class="carList">Car Year</h2></th>
+                    <th> <h2 class="carList">Car Model</h2></th>
                 </tr>
                 <tr>
                     <th> Nissan</th>
@@ -119,9 +83,9 @@
             <a href="https://www.w3schools.com/"><img src="images/mit.jpg" width="1000" height="600"></a>
             <table  border=solid table-layout: auto>
                 <tr>
-                    <th> <h2>Car Manufacturer</h2></th>
-                    <th> <h2>Car Year</h2></th>
-                    <th> <h2>Car Model</h2></th>
+                    <th> <h2 class="carList">Car Manufacturer</h2></th>
+                    <th> <h2 class="carList">Car Year</h2></th>
+                    <th> <h2 class="carList">Car Model</h2></th>
                 </tr>
                 <tr>
                     <th> Mitsubishi</th>

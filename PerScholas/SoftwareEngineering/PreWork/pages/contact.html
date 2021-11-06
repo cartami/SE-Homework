@@ -3,45 +3,8 @@
 <head>
     <!--Place name on browser tab-->
     <title>Michael Cartagena</title>
-    <style type="text/css">
-        body{
-            background-color: cadetblue;
-        }
-        h1{
-            color: rgb(58, 40, 161);
-            background-color: rgb(173, 21, 173);
-            font-family: sans-serif;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: underline brown;
-        }
-        
-        h3{
-            color: rgb(87, 87, 87);
-            background-color: #002;
-            font-family: sans-serif;
-            font-weight: 800;
-            text-align: center;
-            text-decoration: underline;
-            font-style: italic;
-        }
-        p{
-            color: rgb(65, 34, 178);
-            text-transform: none;
-            letter-spacing: 0.2em;
-            word-spacing: 0.5em;
-            line-height: 1;
-            text-align: center;
-        }
-        #clickHere{
-            color: rgb(25, 0, 255);
-        }
-        a{
-            font-size: x-large;
-            text-decoration: none;
-            color: purple;
-        }
-        </style>
+    <link rel="stylesheet" type="text/css"
+          href="css/style.css">
 </head>
 
 <body>
@@ -55,6 +18,22 @@
         <a href="contact.html">Contact</a> 
     </nav>
 
+    <form action="">
+        <h3>Submit your contact information below</h3>
+        First Name: <br>    
+        <input type="text" name="firstname"> <br>
+        Last Name: <br>
+        <input type="text" name="lastname"> <br>
+        Email:     <br>
+        <input type="text" name="email"> 
+        <br>
+        <input type="radio" name="color" value="Red">
+        Red: <br>
+        <input type="radio" name="color" value="Blue">
+        Blue: <br>
+        <br>
+        <input type="button" name="submit" value="submit">
+    </form>
     <br>
     <a href="https://github.com/cartami/SE-Homework">My github</a>
     <br>
