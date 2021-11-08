@@ -48,12 +48,18 @@
     .relative1 {
         position: relative;
       }
-      .relative2 {
+    .relative2 {
         position: relative;
         top: -20px;
         left: 20px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         width: 500px;
+      }
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
       }
     .carList{
         text-decoration: unset;
@@ -79,4 +85,20 @@
         color: black;
         width: 100%;
         transition: 2s;
+    }
+    .div1{
+        background-color: aquamarine;
+    }
+    .div2{
+        background-color: brown;
+    }
+    .div3{
+        background-color: darkcyan;
+    }
+    .div4{
+        background-color: darkred;
+    }
+
+    .div1, .div2, .div3, .div4{
+        border: dashed;
     }
