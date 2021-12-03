@@ -1,29 +1,29 @@
 
-// example : var str = "Da.d";\
-//Question 1
+/*  example : var str = "Da.d";
+Question 1 */
 var prompt = require('prompt-sync')();
 var str = prompt('Enter your palindrome: ');
 //var str = "Da.d";
 var strLength = str.length; //capture the length of the original string
 
-// //Question 2. Lowercase the string and use the RegExp to remove unwanted characters from it like . or ,
+// Question 2. Lowercase the string and use the RegExp to remove unwanted characters from it like . or ,
 var re = /[^A-Za-z0-9]/g; // or var re = /[\W_]/g;
 console.log("The amount of  letters, numbers, and special characters in this string is " + strLength);
 console.log()
 
 var lowRegStr = str.toLowerCase().replace(re, '');
-// str.toLowerCase() = "Da.d".toLowerCase() = "da.d"
-// str.replace(/[\W_]/g, '') = "Da.d".replace(/[\W_]/g, '') = "dad"
-// var lowRegStr = "dad";
+/* str.toLowerCase() = "Da.d".toLowerCase() = "da.d"
+   str.replace(/[\W_]/g, '') = "Da.d".replace(/[\W_]/g, '') = "dad"
+   var lowRegStr = "dad"; */
 console.log(str + 'converted to lowercase and all non-alphanumeric \ncharacters removed: ' + lowRegStr)
 console.log()
 
 var reverseStr = lowRegStr.split('').reverse().join('');
-// lowRegStr.split('') = "dad".split('') = ["d", "a", "d"]
-// ["d", "a", "d"].reverse() = ["d", "a", "d"]
-// ["d", "a", "d"].join('') = "dad"
-// So, "dad".split('').reverse().join('') = "dad";
-// And, var reverseStr = "dad";
+/* lowRegStr.split('') = "dad".split('') = ["d", "a", "d"]
+   ["d", "a", "d"].reverse() = ["d", "a", "d"]
+   ["d", "a", "d"].join('') = "dad"
+   So, "dad".split('').reverse().join('') = "dad";
+   And, var reverseStr = "dad"; */
 console.log(str + ' reversed is: ' + reverseStr)
 console.log()
 
@@ -81,11 +81,6 @@ switch (operator) {
 
     case 'Exit':
         break;
-
-    /* If user enters any other operator or char apart from
-     * +, -, * and /, then display an error message to user
-     * 
-     */
     default:
         console.log("Invalid Option");
         return;
