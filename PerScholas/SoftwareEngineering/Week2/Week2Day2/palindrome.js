@@ -86,3 +86,5 @@ switch (operator) {
         return;
 }
 console.log("The numbers " + splitString[0] + ' ' + operator + ' ' + splitString[1] + " = " + output);
+
+var arr=[[1,2],[3,4],[5,6]];

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+    </div>
+    <label for="headermap">arr = [1, 2, 3, 4, 5]</label>
+    <h2 id="headermap"></h2>
+
+    <h1> Question 1</h1>
+    <label for="header1">arr = [1, 2, 3, 4, 5]</label>
+    </div>
+    <h2 id="header1"></h2>
+
+    <h1> Question 2</h1>
+    </div>
+    <h2 id="header2"></h2>
+
+    <h1> Question 3</h1>
+    </div>
+    <h2 id="header3"></h2>
+
+    <h1> Question 4</h1>
+    </div>
+    <h2 id="header4"></h2>
+</body>
+<script>
+
+    const arr = [1, 2, 3, 4, 5]
+    const newArr = arr.map(num => {
+        return Number(Math.pow(num, 2))
+    })
+
+    const evenArr = [1, 2, 3, 4, 5]
+    const newEvenArr = evenArr.filter(num => {
+        return num % 2 === 0
+    })
+
+    const names = ['Ali', 'Atta', 'Alex', 'John'];
+    let uppercased = names.map(name => name.toUpperCase());
+
+    //HTML variable
+    const newHtml = `newArray is: ${newArr}`
+    document.getElementById("headermap").innerHTML = newHtml
+    console.log(newArr)
+
+
+    //HTML variable
+    const evenHtml = `evenArray is: ${newEvenArr}`
+    document.getElementById("header2").innerHTML = evenHtml
+    console.log(newEvenArr)
+
+    const uppercaseHtml = `capitalizedArray is: ${uppercased}`
+    document.getElementById("header3").innerHTML = uppercaseHtml
+    console.log(uppercased)
+
+    //make the string[] a string in order to use split()
+    //we then make every other word capital or lowercase based on their index
+    const ans = uppercased.toString().split(',')
+        .map((element,index,array) =>
+        {
+            console.log(element)
+            return element = index % 2 === 0
+                ? element.toLowerCase()
+                : element.toUpperCase()
+        }
+        ).join(' ')
+
+    console.log(ans)
+</script>
+
+</html>

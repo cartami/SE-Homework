@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+<h1> Arrays</h1>
+<label for="num-one">Enter a number that occurs in this array arr=[1, 2, 2, 2, 2, 3, 4, 7 ,8 ,8]</label>
+<div><input type="text" id="num-one"> </div>
+</div><h2 id="header1"></h2></body>
+<script>
+ 
+    // Javascript program to count occurrences
+    // of an element
+     let userinput =Number(prompt("Enter number here: "))
+     //let userinput2=prompt("Enter color here: ")
+     
+        // Returns number of times x occurs in arr[0..n-1]
+        function countOccurrences(arr,n,userinput)
+        {
+            let res = 0;
+            for (let i=0; i<n; i++)
+            {
+                if (userinput == arr[i])
+                    res++;
+            }
+            return res;
+        }
+         
+        arr=[1, 2, 2, 2, 2, 3, 4, 7 ,8 ,8]
+        let  n = arr.length;
+        //let x = 2;
+        document.getElementById("header1").innerHTML=(countOccurrences(arr, n, userinput));
+         
+    </script>
+</html>
+

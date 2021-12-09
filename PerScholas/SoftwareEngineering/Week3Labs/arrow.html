@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+<h1> Arrow functions</h1>
+</div><h2 id="header1">Takes a string and logs it is ${userinput}</h2></body>
+<script>
+
+//function log a message 
+const countOccurrences = (userinput) => userinput;
+
+//helper function for prompt
+const callPrompt = (input=prompt("Enter string: ")) => input;
+//let userinput =prompt("Enter string: ");
+
+let userinput = callPrompt();
+let output = countOccurrences(userinput)
+
+//document.getElementById("header1").innerHTML= countOccurrences(userinput); 
+document.getElementById("header1").innerHTML= `Type in Hello World 'it is ${output}'` 
+
+userinput = Number(callPrompt());
+//implementation code needed here code needed here 
+document.getElementById("header1").innerHTML= `Takes a temperature and logs whether that temperature is hot (above 72) or cold (below 40). 'it is ${userinput}'`
+ 
+    </script>
+</html>
+
