@@ -7,7 +7,7 @@
     })
   }
   
-let studentObjs = [
+let student = [
     {name:'trueman',activity:'swimming', gender: 'male'},
     {name:'xaiver',activity:'basketball', gender: 'female'},
     {name:'randy',activity:'climbing', gender: 'male'}, 
@@ -15,4 +15,8 @@ let studentObjs = [
     {name:'monica',activity:'basketball', gender: 'female'}
 ];
 
-console.log(filterByActivity(studentObjs, 'basketball'))  // ['basketball', 'swimming']
+let studentObjsOutput = `studentObjs: ' ${JSON.stringify(student)}'`
+document.getElementById('studentObjs').innerHTML= studentObjsOutput;
+//stringify array of objects
+let studentOutput = `studentObjs that have swimming: ' ${JSON.stringify(filterByActivity(student, 'basketball'))}'`
+document.getElementById('studentObjsWithSwimming').innerHTML= studentOutput;
