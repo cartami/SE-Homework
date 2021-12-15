@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hi Everyone</title>
+</head>
+
+<body>
+    <button id="btn">Click here</button>
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+</body>
+<script>
+let btn_element = document.getElementById("btn");
+  
+  btn_element.addEventListener("click", () => {
+      document.getElementById("text1")
+          .innerHTML = "Task 1 is performed";
+  })
+
+  btn_element.addEventListener("click", () => {
+      document.getElementById("text2")
+          .innerHTML = "Task 2 is performed";
+  });
+</script>
+
+</html>
