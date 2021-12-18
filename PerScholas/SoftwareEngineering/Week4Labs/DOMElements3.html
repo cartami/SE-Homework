@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <ul id="menu">
+                <li class="item">HTML</li>
+                <li class="item">CSS</li>
+                <li class="item">JavaScript</li>
+                <li class="item">TypeScript</li>
+                <li class="item">Python</li>
+                <li class="item">Java</li>
+                <li class="item">C++</li>
+        </ul>
+        <script>
+           
+           let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+            let items = document.getElementsByClassName('item');
+
+           let i=0;
+            days.map(element=> items[i++].innerHTML=element);
+
+           
+         
+       // Now generating list items (<li> tags) as you read (traverse through) an array then display or render the text variable at the end in a "p1" paragraph
+ 
+        let months=["January","February","March","April","May","June","July","August","September","October","November","December"]
+        var text="<ul>";
+        months.map(element=> text+="<li>"+element+"</li>");
+        text+="</ul>"
+       document.getElementById("p1").innerHTML=text
+    </script>
+    </body>
+</html>
+ 
