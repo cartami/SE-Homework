@@ -45,7 +45,7 @@ Array.from(boroughButtons).forEach(boroughButton => {
   
        if(numComplaints) numComplaintsDefault = numComplaints;
     //URL string used to make GET call using filter parameters
-    const url = `https://data.cityofnewyork.us/resource/erm2-nwe9.json?borough=${borough}&agency=NYPD&$limit=${numComplaints}`
+    const url = `https://data.cityofnewyork.us/resource/erm2-nwe9.json?borough=${borough}&agency=NYPD&$limit=${numComplaintsDefault}`
   
     //JS has a built in method for API calls
     // which is promise based
